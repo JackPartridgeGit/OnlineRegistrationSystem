@@ -23,27 +23,7 @@ namespace Registration_Form
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn;
-            SqlCommand command;
-            String queryTable;
 
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
-            conn.Open();
-
-            queryTable = "Insert into Client(FullName, LoginID, Password, Address, City, State, Phone) values (@FullName, @LoginID, @Password, @Address, @City, @State, @Phone)";
-
-            command = new SqlCommand(queryTable, conn);
-            command.Parameters.AddWithValue("@FullName", TextBox1.Text);
-            command.Parameters.AddWithValue("@LoginID", TextBox2.Text);
-            command.Parameters.AddWithValue("@Password", TextBox3.Text);
-            command.Parameters.AddWithValue("@Address", TextBox4.Text);
-            command.Parameters.AddWithValue("@City", TextBox5.Text);
-            command.Parameters.AddWithValue("@State", TextBox6.Text);
-            command.Parameters.AddWithValue("@Phone", TextBox7.Text);
-
-            command.ExecuteNonQuery();
-            command.Dispose();
-            conn.Close();
 
         }
     }

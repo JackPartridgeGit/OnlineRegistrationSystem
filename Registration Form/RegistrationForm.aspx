@@ -42,8 +42,7 @@
                         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style2">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" Display="Dynamic" ErrorMessage="Enter Full Name" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td>LoginID</td>
@@ -51,8 +50,7 @@
                         <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" Display="Dynamic" ErrorMessage="Enter Login ID" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td>Password</td>
@@ -60,8 +58,7 @@
                         <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" Display="Dynamic" ErrorMessage="Enter Password" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td>Address</td>
@@ -69,8 +66,7 @@
                         <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" Display="Dynamic" ErrorMessage="Enter Address" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td>City</td>
@@ -78,8 +74,7 @@
                         <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Enter City" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td>State</td>
@@ -87,8 +82,7 @@
                         <asp:TextBox ID="TextBox6" runat="server" OnTextChanged="TextBox6_TextChanged"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox6" Display="Dynamic" ErrorMessage="Enter State" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td>Phone</td>
@@ -96,8 +90,7 @@
                         <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox7" Display="Dynamic" ErrorMessage="Enter Phone Number" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
