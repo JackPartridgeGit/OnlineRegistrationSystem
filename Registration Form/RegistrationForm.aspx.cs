@@ -16,15 +16,12 @@ namespace Registration_Form
 
         }
 
-        protected void TextBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-
+            if (Page.IsValid)
+            {
+                lblProcess.Text = "Your registration has been processed.";
+            }
         }
     }
 }
