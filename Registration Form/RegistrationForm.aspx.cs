@@ -21,6 +21,35 @@ namespace Registration_Form
             if (Page.IsValid)
             {
                 lblProcess.Text = "Your registration has been processed.";
+
+                SqlCommand command;
+
+                SqlConnection conn;
+
+                string query;
+
+                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+
+                conn.Open();
+
+                query = "INSERT INTO CLIENT(FullName, LoginId, Password, Address, City, State, Phone)" +
+                        "VALUES (@fullName, @loginId, @password, @address, @city, @state, @phone);";
+
+                command = new SqlCommand(query, conn);
+
+                command.Parameters.AddWithValue("@fullName", TextBox1.Text);
+                command.Parameters.AddWithValue("@loginId", TextBox2.Text);
+                command.Parameters.AddWithValue("@password", TextBox3.Text);
+                command.Parameters.AddWithValue("@address", TextBox4.Text);
+                command.Parameters.AddWithValue("@city", TextBox5.Text);
+                command.Parameters.AddWithValue("@state", TextBox6.Text);
+                command.Parameters.AddWithValue("@phone", TextBox7.Text);
+
+                command.ExecuteNonQuery();
+
+                command.Dispose();
+
+                conn.Close();
             }
         }
     }
