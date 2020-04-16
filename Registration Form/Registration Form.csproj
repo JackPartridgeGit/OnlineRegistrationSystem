@@ -71,6 +71,7 @@
     <Content Include="App_Data\registration_log.ldf">
       <DependentUpon>registration.mdf</DependentUpon>
     </Content>
+    <Content Include="DataForm.aspx" />
     <Content Include="Global.asax" />
     <Content Include="RegistrationForm.aspx" />
     <Content Include="Web.config">
@@ -78,6 +79,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataForm.aspx.cs">
+      <DependentUpon>DataForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataForm.aspx.designer.cs">
+      <DependentUpon>DataForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

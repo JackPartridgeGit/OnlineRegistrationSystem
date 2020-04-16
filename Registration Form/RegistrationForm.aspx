@@ -84,7 +84,7 @@
                 <tr>
                     <td>State</td>
                     <td>
-                        <asp:TextBox ID="TextBox6" runat="server" OnTextChanged="TextBox6_TextChanged"></asp:TextBox>
+                        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox6" ErrorMessage="*Required Field" Font-Bold="True" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                     <td>
