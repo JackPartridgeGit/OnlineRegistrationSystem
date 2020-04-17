@@ -20,7 +20,7 @@ namespace Registration_Form
         {
             if (Page.IsValid)
             {
-                lblProcess.Text = "Your registration has been processed. Thanks";
+                lblProcess.Text = "Your registration has been processed. Thank you";
 
                 SqlCommand command;
 
